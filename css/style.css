@@ -29,7 +29,7 @@ html {
 }
 
 #inicio .contenido header .contenido-header {
-    max-width: 1100 px;
+    max-width: 1100px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ html {
 }
 
 #inicio .contenido header .contenido-header nav ul {
-    text-align: none;
+    list-style: none;
     display: flex;
     align-items: center;
 }
@@ -56,7 +56,7 @@ html {
     transition: .5s;
 }
 
-#inicio .contenido header .contenido-header nav ul a:hover {
+#inicio .contenido header .contenido-header nav ul li a:hover {
     color: #ff5080;
 }
 
@@ -69,6 +69,10 @@ html {
 }
 
 #inicio .contenido header .contenido-header .redes a:hover {
+    color: #ff5080;
+}
+
+#inicio .contenido header .contenido-header .seleccionado {
     color: #ff5080;
 }
 
@@ -123,11 +127,6 @@ html {
 
 #inicio .contenido .presentacion a:hover {
     background-color: #ff5080;
-}
-
-#icono-nav {
-    color: #fff;
-    display: none;
 }
 
 #icono-nav {
@@ -218,43 +217,43 @@ html {
     padding: 100px 15px;
     text-align: center;
     background-color: #f3f3f3;
-  }
-  
-  #servicios .titulo-seccion {
+}
+
+#servicios .titulo-seccion {
     font-size: 22px;
     text-transform: uppercase;
     color: #111135;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
-  }
-  
-  #servicios .fila {
+}
+
+#servicios .fila {
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
     margin: 30px auto;
-  }
-  
-  #servicios .fila .servicio {
+}
+
+#servicios .fila .servicio {
     max-width: 350px;
     background-color: #fff;
     padding: 30px;
     margin: 0 5px;
     border-radius: 5px;
     transition: .5s;
-  }
-  
-  #servicios .fila .servicio:hover {
+}
+
+#servicios .fila .servicio:hover {
     box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
-  }
-  
-  #servicios .fila .servicio h4 {
+}
+
+#servicios .fila .servicio h4 {
     font-size: 22px;
     margin-bottom: 25px;
-  }
-  
-  #servicios .fila .servicio .icono {
+}
+
+#servicios .fila .servicio .icono {
     display: inline-block;
     width: 60px;
     height: 60px;
@@ -262,30 +261,30 @@ html {
     background-color: #d3d3d3;
     padding: 20px;
     margin-bottom: 25px;
-  }
-  
-  #servicios .fila .servicio hr {
+}
+
+#servicios .fila .servicio hr {
     width: 50%;
     margin: auto;
     color: #000;
     margin-bottom: 25px;
-  }
-  
-  #servicios .fila .servicio ul {
+}
+
+#servicios .fila .servicio ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  #servicios .fila .servicio ul li {
+}
+
+#servicios .fila .servicio ul li {
     margin-bottom: 20px;
-  }
-  
-  #servicios .fila .servicio p {
+}
+
+#servicios .fila .servicio p {
     font-size: 14px;
     line-height: 22px;
     text-align: justify;
-  }
+}
 
 /* SECCION HABILIDADES */
 .contenedor-skills {
@@ -401,7 +400,7 @@ html {
     margin: auto;
 }
 
-#portafolio .titulo-seccion{
+#portafolio .titulo-seccion {
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
@@ -417,7 +416,7 @@ html {
     margin: 30px 0;
 }
 
-#portafolio .fila .proyecto{
+#portafolio .fila .proyecto {
     width: 450px;
     height: 300px;
     border: 1px solid #000;
@@ -450,7 +449,7 @@ html {
     transition: .5s;
 }
 
-#portafolio .fila .proyecto:hover .info{
+#portafolio .fila .proyecto:hover .info {
     opacity: 1;
     bottom: 0;
 }
@@ -493,15 +492,15 @@ html {
     border: 1px solid #919191;
 }
 
-#contacto .contenedor-form .mitad input{
+#contacto .contenedor-form .mitad input {
     width: 48%;
 }
 
-#contacto .contenedor-form .input-full{
+#contacto .contenedor-form .input-full {
     width: 100%;
 }
 
-#contacto .btn-enviar{
+#contacto .btn-enviar {
     display: block;
     margin: auto;
     cursor: pointer;
@@ -511,19 +510,19 @@ html {
     font-weight: bold;
 }
 
-#contacto .btn-enviar:hover{
+#contacto .btn-enviar:hover {
     background-color: #ff5080;
     color: #fff;
 }
 
-footer{
+footer {
     background-color: #000;
     color: #fff;
     text-align: center;
     padding: 30px 0;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #fff;
     display: inline-block;
@@ -532,14 +531,16 @@ footer a{
 }
 
 /* SECCION RESPONSIVE */
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
     .redes {
         display: none;
     }
+
     nav {
         display: none;
     }
-    nav.responive{
+
+    nav.responsive {
         display: block;
         background-color: rgba(0, 0, 0, .8);
         width: 100%;
@@ -560,5 +561,79 @@ footer a{
 
     #icono-nav {
         display: block;
+    }
+
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+
+    /* seccion SOBRE MI */
+    #sobremi {
+        padding: 50px 0;
+        display: block;
+    }
+
+    #sobremi .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+
+    #sobremi .contenedor-foto img {
+        padding: 8px;
+    }
+
+    #sobremi .sobremi .titulo-seccion {
+        text-align: center;
+    }
+
+    #sobremi .sobremi h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /* seccion MIS SERVICIOS */
+    #servicios {
+        padding: 50px 15px;
+    }
+
+    #servicios .fila {
+        display: block;
+    }
+
+    #servicios .fila .servicio {
+        margin: 10px auto;
+    }
+
+    /* seccion HABLIDADES MI */
+    .contenedor-skills {
+        padding: 50px 20px;
+    }
+
+    /* seccion PORTFOLIO */
+    #portafolio {
+        padding: 50px 0;
+    }
+
+    #portafolio .fila {
+        display: block;
+    }
+
+    #portafolio .fila .proyecto {
+        margin: 10px auto;
+    }
+
+    /* seccion CONTACTO */
+    #contacto {
+        padding: 50px 15px;
+    }
+
+    #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }

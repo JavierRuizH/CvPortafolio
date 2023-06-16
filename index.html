@@ -12,8 +12,11 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
         integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet">
-    
+
 </head>
 
 <body>
@@ -24,12 +27,12 @@
                 <div class="contenido-header">
                     <h1>/JFR/</h1>
                     <nav id="nav" class="">
-                        <ul id="Links">
-                            <li><a href="#inicio" class="seleccionando">INICIO</a></li>
-                            <li><a href="#sobremi">SOBRE MI</a></li>
-                            <li><a href="#servicios">SERVICIOS</a></li>
-                            <li><a href="#portafolio">PORTAFOLIO</a></li>
-                            <li><a href="#contacto">CONTACTO</a></li>
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
 
@@ -40,7 +43,8 @@
 
                     <!-- Iconos de las redes sociales -->
                     <div class="redes">
-                        <a href="https://github.com/JavierRuizH?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/JavierRuizH?tab=repositories"><i
+                                class="fa-brands fa-github"></i></a>
                         <a href="https://www.facebook.com/javiruiz.h"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://twitter.com/Javi_Ruiz_"><i class="fa-brands fa-square-twitter"></i></a>
                     </div>
@@ -79,88 +83,100 @@
     </section>
 
     <!-- SECCION SERVICIOS -->
-<section id="servicios">
-    <h3 class="titulo-seccion">MIS SERVICIOS</h3>
-    <div class="fila">
-        <div class="servicio">
-            <span class="icono"><i class="fa-solid fa-globe"></i></span>
-            <h4>Diseño de Sitios Web</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>Web</li>
-                <li>Graphic</li>
-                <li>SEO</li>
-            </ul>
-            <hr>
-            <p>Ofrezco servicios de diseño de sitios web profesionales, adaptados a las necesidades de tu negocio. Utilizo las últimas tecnologías y estándares de la industria para crear sitios web atractivos y funcionales.</p>
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-globe"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <hr>
+                <p>Ofrezco servicios de diseño de sitios web profesionales, adaptados a las necesidades de tu negocio.
+                    Utilizo las últimas tecnologías y estándares de la industria para crear sitios web atractivos y
+                    funcionales.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-shopping-cart"></i></span>
+                <h4>Ecommerce</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Tiendas Online</li>
+                    <li>Pasarelas de Pago</li>
+                    <li>Gestión de Inventarios</li>
+                </ul>
+                <hr>
+                <p>Impulsa tu negocio en línea con una tienda virtual atractiva y funcional. Te ofrezco soluciones de
+                    comercio electrónico personalizadas que incluyen tiendas en línea, integración de pasarelas de pago
+                    y gestión de inventarios para facilitar tus operaciones comerciales.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Gestión de Bases de Datos (SQL)</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Diseño de Esquemas</li>
+                    <li>Consultas Avanzadas</li>
+                    <li>Optimización de Rendimiento</li>
+                </ul>
+                <hr>
+                <p>Ofrezco servicios de gestión de bases de datos utilizando SQL. Diseño esquemas eficientes, escribo
+                    consultas avanzadas y optimizo el rendimiento de tus bases de datos para asegurar un acceso rápido y
+                    confiable a tus datos.</p>
+            </div>
         </div>
-        <div class="servicio">
-            <span class="icono"><i class="fa-solid fa-shopping-cart"></i></span>
-            <h4>Ecommerce</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>Tiendas Online</li>
-                <li>Pasarelas de Pago</li>
-                <li>Gestión de Inventarios</li>
-            </ul>
-            <hr>
-            <p>Impulsa tu negocio en línea con una tienda virtual atractiva y funcional. Te ofrezco soluciones de comercio electrónico personalizadas que incluyen tiendas en línea, integración de pasarelas de pago y gestión de inventarios para facilitar tus operaciones comerciales.</p>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-tools"></i></span>
+                <h4>Mantenimiento y Soporte</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Actualizaciones</li>
+                    <li>Resolución de Problemas</li>
+                    <li>Seguridad</li>
+                </ul>
+                <hr>
+                <p>Ofrezco servicios de mantenimiento y soporte continuo para garantizar el funcionamiento sin problemas
+                    de tus aplicaciones y sitios web. Realizo actualizaciones, soluciono problemas técnicos y me aseguro
+                    de que tus sistemas estén protegidos contra amenazas de seguridad.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-cogs"></i></span>
+                <h4>Desarrollo Backend</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>APIs</li>
+                    <li>Bases de Datos</li>
+                    <li>Seguridad</li>
+                </ul>
+                <hr>
+                <p>Creo soluciones backend robustas y escalables utilizando tecnologías modernas. Diseño y desarrollo
+                    APIs eficientes, gestiono bases de datos y aplico medidas de seguridad para proteger tus datos y
+                    garantizar un rendimiento óptimo.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo Frontend</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+                <hr>
+                <p>Creo interfaces de usuario atractivas y responsivas utilizando tecnologías frontend modernas.
+                    Convierto tus diseños en código HTML semántico, aplico estilos CSS3 avanzados y agrego
+                    interactividad con JavaScript para ofrecer una experiencia de usuario inigualable.</p>
+            </div>
         </div>
-        <div class="servicio">
-            <span class="icono"><i class="fa-solid fa-database"></i></span>
-            <h4>Gestión de Bases de Datos (SQL)</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>Diseño de Esquemas</li>
-                <li>Consultas Avanzadas</li>
-                <li>Optimización de Rendimiento</li>
-            </ul>
-            <hr>
-            <p>Ofrezco servicios de gestión de bases de datos utilizando SQL. Diseño esquemas eficientes, escribo consultas avanzadas y optimizo el rendimiento de tus bases de datos para asegurar un acceso rápido y confiable a tus datos.</p>
-        </div>
-    </div>
-    <div class="fila">
-        <div class="servicio">
-            <span class="icono"><i class="fa-solid fa-tools"></i></span>
-            <h4>Mantenimiento y Soporte</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>Actualizaciones</li>
-                <li>Resolución de Problemas</li>
-                <li>Seguridad</li>
-            </ul>
-            <hr>
-            <p>Ofrezco servicios de mantenimiento y soporte continuo para garantizar el funcionamiento sin problemas de tus aplicaciones y sitios web. Realizo actualizaciones, soluciono problemas técnicos y me aseguro de que tus sistemas estén protegidos contra amenazas de seguridad.</p>
-        </div>
-        <div class="servicio">
-            <span class="icono"><i class="fa-solid fa-cogs"></i></span>
-            <h4>Desarrollo Backend</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>APIs</li>
-                <li>Bases de Datos</li>
-                <li>Seguridad</li>
-            </ul>
-            <hr>
-            <p>Creo soluciones backend robustas y escalables utilizando tecnologías modernas. Diseño y desarrollo APIs eficientes, gestiono bases de datos y aplico medidas de seguridad para proteger tus datos y garantizar un rendimiento óptimo.</p>
-        </div>
-        <div class="servicio">
-            <span class="icono"><i class="fa-solid fa-code"></i></span>
-            <h4>Desarrollo Frontend</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-            </ul>
-            <hr>
-            <p>Creo interfaces de usuario atractivas y responsivas utilizando tecnologías frontend modernas. Convierto tus diseños en código HTML semántico, aplico estilos CSS3 avanzados y agrego interactividad con JavaScript para ofrecer una experiencia de usuario inigualable.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
 
-    
+
 
     <!-- SECCION HABILIDADES -->
     <div class="contenedor-skills" id="skills">
@@ -201,7 +217,7 @@
                 <span class="porcentaje">70%</span>
             </div>
             <div class="barra">
-                <div id="js" class="barra-progreso4"></div>
+                <div id="java" class="barra-progreso4"></div>
             </div>
         </div>
     </div>
@@ -250,10 +266,11 @@
                     <input type="text" placeholder="Asunto..." class="input-full">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" rows="10" cols="30" placeholder="Tu mensaje..." class="input-full"></textarea>
+                    <textarea name="" id="" rows="10" cols="30" placeholder="Tu mensaje..."
+                        class="input-full"></textarea>
                 </div>
 
-                <input type="submit" value="Enviar Mensaje"  class="btn-enviar"> 
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
             </form>
         </div>
     </section>
@@ -269,8 +286,8 @@
 
     </footer>
 
-    
-</body>
     <script src="./js/script.js"></script>
+</body>
+
 
 </html>
