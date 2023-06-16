@@ -257,20 +257,23 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contactame ahora</h3>
         <div class="contenedor-form">
-            <form action="">
+            <form action="https://formsubmit.co/jav.ruiz200@gmail.com" method="POST">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
-                    <input type="text" placeholder="Dirección de Email" class="input-mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="Nombre completo">
+                    <input type="text" placeholder="Dirección de Email" class="input-mitad" name="Dirección Email">
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Asunto..." class="input-full">
+                    <input type="text" placeholder="Asunto..." class="input-full" name="Asunto">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" rows="10" cols="30" placeholder="Tu mensaje..."
+                    <textarea name="Mensaje" id="" rows="10" cols="30" placeholder="Tu mensaje..."
                         class="input-full"></textarea>
                 </div>
 
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </section>
